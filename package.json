@@ -1,0 +1,29 @@
+{
+  "name": "ideal-journey",
+  "version": "0.0.1",
+  "description": "Testing Lambda with some foo",
+  "main": "handler.js",
+  "scripts": {
+    "lint": "jslint **/*.js",
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtslear/ideal-journey.git"
+  },
+  "author": "John T Skarbek <jtslear@gmail.com>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/jtslear/ideal-journey/issues"
+  },
+  "homepage": "https://github.com/jtslear/ideal-journey#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jslint": "^0.10.3",
+    "mocha": "^3.1.2",
+    "nock": "^8.1.0"
+  },
+  "dependencies": {
+    "serverless": "^1.0.2"
+  }
+}

@@ -4,10 +4,10 @@ var hello = require('./handler').hello
 
 describe('hello', () => {
   it('respond with stuff', (done) => {
-    hello(null, (err, result) => {
+    hello({"a":"b"}, null, (err, result) => {
       expect(err).to.not.exist
+      result = JSON.parse(result.body);
       expect(result).to.have.property('text')
-      scope.done()
       done()
     })
   })

@@ -5,7 +5,8 @@
   "main": "handler.js",
   "scripts": {
     "lint": "jslint **/*.js",
-    "test": "mocha test.js"
+    "test": "mocha test.js",
+    "mock": "docker run --rm -v ${PWD}:/var/task lambci/lambda handler.hello"
   },
   "repository": {
     "type": "git",
